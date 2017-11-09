@@ -120,8 +120,8 @@ sudo python testDHT11.py
 
 **Step 3:**
 
-1. Create an account in AWS [here] (www._console.aws.amazon.com_)
-2. Follow the steps mentioned [here] (http://docs.aws.amazon.com/iot/latest/developerguide/iot-console-signin.html)
+1. Create an account in AWS [here](https://aws.amazon.com)
+2. Follow the steps mentioned [here](http://docs.aws.amazon.com/iot/latest/developerguide/iot-console-signin.html)
 3. While Creating policies, try to allow iot:\* for learning purpose which means we are allowing all the traffic.
 4. Download all the certificates and put them onto the Raspberry pi using WinSCP for Windows in the same folder of the cloned git repository for easy purpose, if not you should change the file path in the code.
 
@@ -144,7 +144,7 @@ git clone https://github.com/hariharnath/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
 ls Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
-Sudo nano PublishTempToAWS.py
+sudo nano PublishTempToAWS.py
 
 ```
 
@@ -152,7 +152,7 @@ Sudo nano PublishTempToAWS.py
 
 ```sh
 
-Sudo python PublishTempToAWS.py
+sudo python PublishTempToAWS.py
 
 ```
 

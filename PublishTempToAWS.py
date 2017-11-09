@@ -76,7 +76,6 @@ myShadowClient.connect()
 time.sleep(2)
 
 # Publish to the topic in a loop
-loopCount = 0
 #this is the topic to update to the thing shadow
 #topic="$aws/things/"+AWS_IOT_MY_THING_NAME+"/shadow/update"
 
@@ -89,19 +88,19 @@ sensor_id = 'DHT11_xxx'
 #myShadowClient .subscribe(topic+"/delta", 1, customCallback)
 try:
 	while True:
-		loopCount += 1
-		# Try to grab a sensor reading.  Use the read_retry method which will retry up
-		# to 15 times to get a sensor reading (waiting 2 seconds between each retry).
-		humidity, temperature = Adafruit_DHT.read_retry(DHT_TYPE, DHT_PIN)
+		humidity, temperature = Adafruit_DHT.read(DHT_TYPE, DHT_PIN)
 		timestamp = datetime.datetime.now()
 		if humidity is not None and temperature is not None:
-			print(' Temperature: {} C  Humidity: {} Loop # {:d}'.format(temperature,humidity,loopCount))
+			print('\n--------------------------------------------------------')
+			print(" Output is here")
 			print(' Time: {} \n'.format(timestamp))
-			msg = '"Loop": "{}","Sensor": "{:s}", "Temperature": "{}","Humidity": "{}" '.format(loopCount,sensor_id, temperature,humidity,)
+			print(' Temperature: {} C  Humidity: {} timestamp: {}'.format(temperature,humidity,timestamp))
+			msg = ' "Pi_timestamp": "{}","Sensor": "{:s}", "Temperature": "{}","Humidity": "{}" '.format(timestamp,sensor_id, temperature,humidity)
 			msg = '{'+msg+'}'
-			#payload={"state":{"reported": {"loopCount": loopCount,"Temperature": temperature, "Humidity": humidity }}}
+			#payload={"state":{"reported": {"timestamp": timestamp,"Temperature": temperature, "Humidity": humidity }}}
 			#payload=json.dumps(payload)
 			print(msg)
+			print('--------------------------------------------------------\n')
 			status=myShadowClient.publish(topic, msg, 1)
 			if(status):
 				print("Updated " +str(status))
@@ -115,6 +114,3 @@ finally:
 	print('Exiting the loop');
 	myShadowClient.disconnect()
 	print('Disconnected from AWS')
-	
-
-

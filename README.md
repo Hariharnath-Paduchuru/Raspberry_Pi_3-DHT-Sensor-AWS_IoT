@@ -39,7 +39,7 @@ sudo apt-get install python3
 ```
 
 - Adafruit Python DHT Sensor Library
-  - Library for python to communicate with Raspberry pi gpio pins Tutorial for Adafruit&#39;s guide and library installation can be found [here](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-gpio)
+  - This is a python library for reading DHT series of temperature and humidity on raspberry pi. Reference code is available [here](https://github.com/adafruit/Adafruit_Python_DHT)
 
 ```sh
 
@@ -51,7 +51,6 @@ sudo apt-get install python-rpi.gpio
 
 ```
 
-  - This is a python library for reading DHT series of temperature and humidity on raspberry pi. For reference code is available [here](https://github.com/adafruit/Adafruit_Python_DHT)
 
 ```sh
 

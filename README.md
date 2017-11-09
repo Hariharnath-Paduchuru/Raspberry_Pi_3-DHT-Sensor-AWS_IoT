@@ -106,6 +106,8 @@ git clone https://github.com/hariharnath/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
   - Signal Pin is connected to the GPIO pin 4 of pi
   - Negative pin of sensor is connected to GPIO pin 6 of pi
   - Vcc pin of sensor is connected  to GPIO pin 2 of pi
+  
+![Raspberry pi pinout](https://www.raspberrypi-spy.co.uk/wp-content/uploads/2012/06/Raspberry-Pi-GPIO-Layout-Model-B-Plus-rotated-2700x900.png)
 
    Test: To check connection a sample program, Run
 

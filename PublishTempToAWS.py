@@ -90,7 +90,9 @@ sensor_id = 'DHT11_xxx'
 try:
 	while True:
 		loopCount += 1
-		humidity, temperature = Adafruit_DHT.read(DHT_TYPE, DHT_PIN)
+		# Try to grab a sensor reading.  Use the read_retry method which will retry up
+		# to 15 times to get a sensor reading (waiting 2 seconds between each retry).
+		humidity, temperature = Adafruit_DHT.read_retry(DHT_TYPE, DHT_PIN)
 		timestamp = datetime.datetime.now()
 		if humidity is not None and temperature is not None:
 			print(' Temperature: {} C  Humidity: {} Loop # {:d}'.format(temperature,humidity,loopCount))

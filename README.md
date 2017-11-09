@@ -54,9 +54,9 @@ sudo apt-get install python-rpi.gpio
 
 ```sh
 
-git clone https://github.com/adafruit/Adafruit\_Python\_DHT.git
+git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 
-cd Adafruit\_Python\_DHT
+cd Adafruit_Python_DHT
 
 sudo apt-get update
 

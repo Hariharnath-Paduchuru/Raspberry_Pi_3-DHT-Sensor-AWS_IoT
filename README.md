@@ -78,7 +78,7 @@ pip install AWSIoTPythonSDK
 
 ```sh
 
-git clone https://github.com/hariharnath/Raspberry\_Pi\_3-DHT-Sensor-AWS\_IoT
+git clone https://github.com/hariharnath/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
 ```
 
@@ -140,9 +140,9 @@ sudo python testDHT11.py
 ```sh
 cd
 
-git clone https://github.com/hariharnath/Raspberry\_Pi\_3-DHT-Sensor-AWS\_IoT
+git clone https://github.com/hariharnath/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
-ls Raspberry\_Pi\_3-DHT-Sensor-AWS\_IoT
+ls Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
 Sudo nano PublishTempToAWS.py
 

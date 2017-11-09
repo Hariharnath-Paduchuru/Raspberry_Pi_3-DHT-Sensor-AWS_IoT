@@ -135,13 +135,10 @@ sudo python testDHT11.py
 
 **Step 5:**
 
-1. Open the console in Raspberry pi
-
-   cd
-
-   Clone the git Repo
+1. Open the console in Raspberry pi, Clone the git Repo and run the code
 
 ```sh
+cd
 
 git clone https://github.com/hariharnath/Raspberry\_Pi\_3-DHT-Sensor-AWS\_IoT
 

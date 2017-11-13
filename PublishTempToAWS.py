@@ -114,3 +114,4 @@ finally:
 	print('Exiting the loop');
 	myShadowClient.disconnect()
 	print('Disconnected from AWS')
+	GPIO.cleanup()

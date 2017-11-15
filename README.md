@@ -9,7 +9,7 @@ DHT11 sensor is the Temperature and Humidity sensor, Raspberry pi 3 is used to c
 
 **Flow Chart**
 
-![Types of DHT11 sensors](C:\Users\hariharnathp\Desktop\Raspberry pi\AWS IoT DHT\AWS_IOT_MQTT.png)
+![FlowChart](https://user-images.githubusercontent.com/29800208/32822567-3430f26e-c9ff-11e7-8514-e1e81e6e6211.PNG)
 
 
 **Basic Steps:**

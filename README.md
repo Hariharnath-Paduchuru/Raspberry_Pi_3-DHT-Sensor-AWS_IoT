@@ -9,7 +9,7 @@ Raspberry pi 3 is used to connect and fetch the values from the DHT11,Temperatur
 
 **Flow Chart**
 
-![FlowChart](https://user-images.githubusercontent.com/29800208/32822567-3430f26e-c9ff-11e7-8514-e1e81e6e6211.PNG)
+![FlowChart](https://user-images.githubusercontent.com/29800208/32888257-acb9752e-caec-11e7-8dde-f3c26aeef6e7.png)
 
 
 **Basic Steps:**

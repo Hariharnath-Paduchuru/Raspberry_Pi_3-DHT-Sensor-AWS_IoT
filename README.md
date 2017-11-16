@@ -5,7 +5,7 @@ Upload the Temperature and humidity values to AWS IoT Using Raspberry Pi 3
 
 This Project will help you setup the Raspberry pi 3 with DHT Sensor and AWS IoT with MQTT protocol.
 
-DHT11 sensor is the Temperature and Humidity sensor, Raspberry pi 3 is used to connect and fetch the values from the sensor. It also is used to connect  and push the data to the AWS cloud in Json format using MQTT protocol.
+Raspberry pi 3 is used to connect and fetch the values from the DHT11,Temperature and Humidity sensor. It also is used to connect  and push the data to the AWS cloud in Json format using MQTT protocol.
 
 **Flow Chart**
 

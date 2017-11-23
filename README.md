@@ -1,4 +1,4 @@
-# Raspberry_Pi_3-DHT-Sensor-AWS_IoT
+# Upload DHT11 Data to AWS IoT Using Raspberry Pi 3 with MQTT Protocol
 Upload the Temperature and humidity values to AWS IoT Using Raspberry Pi 3
 
 ## Project Overview

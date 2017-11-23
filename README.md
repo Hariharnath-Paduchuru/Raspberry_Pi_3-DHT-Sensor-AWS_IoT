@@ -1,18 +1,19 @@
 # Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 Upload the Temperature and humidity values to AWS IoT Using Raspberry Pi 3
 
-**Project Overview**
+## Project Overview
 
-This Project will help you setup the Raspberry pi 3 with DHT Sensor and AWS IoT with MQTT protocol.
+This Project will help you setup the Raspberry pi 3 with DHT Sensor and upload the data to AWS IoT with MQTT protocol.
 
 Raspberry pi 3 is used to connect and fetch the values from the DHT11,Temperature and Humidity sensor. It also is used to connect  and push the data to the AWS cloud in Json format using MQTT protocol.
 
-**Flow Chart**
+
+## Flow Chart
 
 ![FlowChart](https://user-images.githubusercontent.com/29800208/32888257-acb9752e-caec-11e7-8dde-f3c26aeef6e7.png)
 
 
-**Basic Steps:**
+## Basic Steps:
 
 1.  Basic Installation setup of Raspberry Pi 3
 2.  Connect the Hardware component (DHT11) to the Raspberry Pi 3
@@ -20,9 +21,10 @@ Raspberry pi 3 is used to connect and fetch the values from the DHT11,Temperatur
 4. Configuring the AWS IoT Services
 5. Programming the Raspberry Pi
 
-**Requirements**
 
-**Hardware**
+## Requirements
+
+### Hardware
 
 1. Raspberry pi 3 (with Raspbian Jessie OS)
 2. Micro-USB cable for power
@@ -31,7 +33,7 @@ Raspberry pi 3 is used to connect and fetch the values from the DHT11,Temperatur
 5. Jumper wires
 6. HDMI cable/ LAN Cable
 
-**Software**
+### Software
 
 - Python
 
@@ -91,12 +93,12 @@ git clone https://github.com/hariharnath/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
    Register and login through AWS console [here](https://aws.amazon.com/). Create a free account. Now you can access all free tier amazon web services.
 
-**Step 1:**
+### Step 1:
 
 - Setup the Raspberry pi as per the initial setup mentioned [here](https://raspberrypihq.com/booting-the-raspberry-pi-for-the-first-time/)
 
 
-**Step 2:**
+### Step 2:
 
 - Connecting Raspberry pi with DHT11 sensor. Make the connections as mentioned in the below pictures.
 ![Types of DHT11 sensors](http://www.circuitbasics.com/wp-content/uploads/2015/12/DHT11-Pinout-for-three-pin-and-four-pin-types-2.jpg)
@@ -125,7 +127,7 @@ sudo python testDHT11.py
    The output should show temperature in degree Celsius and humidity percentage readings in console every 5 seconds iteratively.
 
 
-**Step 3:**
+### Step 3:
 
 1. Create an account in AWS [here](https://aws.amazon.com)
 2. Follow the steps mentioned [here](http://docs.aws.amazon.com/iot/latest/developerguide/iot-console-signin.html)
@@ -133,14 +135,14 @@ sudo python testDHT11.py
 4. Download all the certificates and put them onto the Raspberry pi using WinSCP for Windows in the same folder of the cloned git repository for easy purpose, if not you should change the file path in the code.
 
 
-**Step 4:**
+### Step 4:
 
 1. Open the test tab of the AWS IoT service
 2. Click on subscribe to a topic and enter the topic as &quot;awsiot/dht11&quot; without quotes.
 3. Take a note of this topic.
 
 
-**Step 5:**
+### Step 5:
 
 1. Open the console in Raspberry pi, Clone the git Repo and run the code
 

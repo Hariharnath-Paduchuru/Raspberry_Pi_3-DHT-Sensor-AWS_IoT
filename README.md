@@ -151,7 +151,7 @@ cd
 
 git clone https://github.com/Hariharnath-Paduchuru/Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
-ls Raspberry_Pi_3-DHT-Sensor-AWS_IoT
+cd Raspberry_Pi_3-DHT-Sensor-AWS_IoT
 
 sudo nano PublishTempToAWS.py
 
